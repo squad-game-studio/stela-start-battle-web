@@ -1,3 +1,77 @@
 ---
-import Section from "../components/Section.astro";
+
 ---
+
+<div class="conten">
+  <div class="text">
+    <h2>Descripcion</h2><br />
+    <p>
+      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ab optio non aut
+      fugiat nemo nostrum soluta? Accusantium distinctio asperiores repellat
+      aspernatur ipsum perspiciatis necessitatibus aliquam, placeat porro
+      aperiam possimus earum.
+      <br /><br />
+      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Suscipit, animi odio
+      ipsam autem ad, explicabo in magni itaque id, illo vel non sit quas adipisci
+      repellendus illum dolores doloremque facilis!
+    </p>
+  </div>
+</div>
+
+<video autoplay loop muted src="/video/video01.mp4" class="video"></video>
+<div class="capa"></div>
+
+<style>
+  .video {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .capa {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+
+    background: rgb(9, 9, 10);
+    background: linear-gradient(
+      0deg,
+      rgba(9, 9, 10, 0.6166841736694677) 0%,
+      rgba(9, 9, 10, 0.6334908963585435) 24%,
+      rgba(9, 9, 10, 0.8239670868347339) 59%,
+      rgba(9, 9, 10, 0.9416141456582633) 82%,
+      rgba(9, 9, 10, 0.9416141456582633) 82%
+    );
+  }
+
+  .conten {
+    width: 70%;
+    margin: 0 auto 72px;
+    left: 15%;
+    right: 15%;
+    padding-top: 10%;
+    padding-bottom: 10%;
+    position: absolute;
+    z-index: 2;
+  }
+
+  .text {
+    p,
+    h2 {
+      box-sizing: border-box;
+      color: #fff;
+      text-shadow: 0 5px 10px #0004;
+      padding-right: 40%;
+    }
+
+    h2 {
+      font-weight: bolder;
+      font-size: 4em;
+      line-height: 1.3em;
+      font-family:
+        system-ui,
+        -apple-system;
+    }
+  }
+</style>
