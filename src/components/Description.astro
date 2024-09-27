@@ -2,6 +2,8 @@
 
 ---
 
+<div class="transition"></div>
+
 <div class="conten">
   <div class="text">
     <h2>Descripcion</h2><br />
@@ -72,6 +74,29 @@
       font-family:
         system-ui,
         -apple-system;
+    }
+  }
+
+  .transition {
+    background-color: #f1683a;
+    width: 100vw;
+    height: 83.8vh;
+    position: absolute;
+    z-index: 100;
+    view-timeline-name: --transition;
+    view-timeline-axis: block;
+    animation-timeline: --transition;
+    animation-name: show;
+    animation-fill-mode: both;
+  }
+
+  @keyframes show {
+    form {
+      height: 0vh;
+    }
+
+    to {
+      transform: translateY(-100vh);
     }
   }
 </style>
