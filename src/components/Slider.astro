@@ -152,6 +152,24 @@
     height: 100vh;
     overflow: hidden;
     position: relative;
+
+    view-timeline-name: --transition;
+    view-timeline-axis: block;
+    animation-timeline: --transition;
+
+    animation-name: transition;
+    animation-range: exit 2%;
+    animation-fill-mode: both;
+  }
+
+  @keyframes transition {
+    form {
+      opacity: 1;
+    }
+
+    to {
+      opacity: 0;
+    }
   }
 
   .slider .list .item {

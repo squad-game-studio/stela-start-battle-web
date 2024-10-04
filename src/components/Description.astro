@@ -1,40 +1,49 @@
 ---
-
+import Requirements from "../components/Requirements.astro";
 ---
 
-<div class="transition"></div>
+<section>
+  <div class="transition"></div>
 
-<div class="conten">
-  <div class="text">
-    <h2>Descripcion</h2><br />
-    <p>
-      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ab optio non aut
-      fugiat nemo nostrum soluta? Accusantium distinctio asperiores repellat
-      aspernatur ipsum perspiciatis necessitatibus aliquam, placeat porro
-      aperiam possimus earum.
-      <br /><br />
-      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Suscipit, animi odio
-      ipsam autem ad, explicabo in magni itaque id, illo vel non sit quas adipisci
-      repellendus illum dolores doloremque facilis!
-    </p>
+  <div class="conten">
+    <div class="text">
+      <h2>Descripcion</h2><br />
+      <p>
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ab optio non
+        aut fugiat nemo nostrum soluta? Accusantium distinctio asperiores
+        repellat aspernatur ipsum perspiciatis necessitatibus aliquam, placeat
+        porro aperiam possimus earum.
+        <br /><br />
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Suscipit, animi
+        odio ipsam autem ad, explicabo in magni itaque id, illo vel non sit quas
+        adipisci repellendus illum dolores doloremque facilis!
+      </p>
+    </div>
   </div>
-</div>
 
-<video autoplay loop muted src="/video/video01.mp4" class="video"></video>
-<div class="capa"></div>
+  <Requirements />
+
+  <div class="capa"></div>
+  <video autoplay loop muted src="/video/video01.mp4" class="video"></video>
+</section>
 
 <style>
+  section {
+    position: relative;
+  }
+
   .video {
-    position: absolute;
     width: 100%;
-    height: 100%;
+    height: 97.8vh;
     object-fit: cover;
+    mask-image: linear-gradient(rgb(0, 0, 0) 80%, transparent);
   }
 
   .capa {
     position: absolute;
     width: 100%;
     height: 100%;
+    z-index: 100;
 
     background: rgb(9, 9, 10);
     background: linear-gradient(
@@ -55,7 +64,7 @@
     padding-top: 10%;
     padding-bottom: 10%;
     position: absolute;
-    z-index: 2;
+    z-index: 101;
   }
 
   .text {
@@ -80,13 +89,16 @@
   .transition {
     background-color: #f1683a;
     width: 100vw;
-    height: 83.8vh;
+    height: 45.95vh;
     position: absolute;
-    z-index: 100;
+    z-index: 111;
+
     view-timeline-name: --transition;
     view-timeline-axis: block;
     animation-timeline: --transition;
+
     animation-name: show;
+    animation-range: entry 5% cover 60%;
     animation-fill-mode: both;
   }
 
@@ -96,7 +108,7 @@
     }
 
     to {
-      transform: translateY(-100vh);
+      transform: translateY(-46vh);
     }
   }
 </style>
