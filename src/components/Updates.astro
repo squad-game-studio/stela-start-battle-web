@@ -1,0 +1,164 @@
+---
+
+---
+
+<div class="transition"></div>
+<section>
+  <div class="title">
+    <h2>Actualizaciones</h2>
+  </div>
+  <div class="item">
+    <div class="hover"><h2>Update A.1.0</h2></div>
+    <div class="sub-title">
+      <p>Update A.1.0</p>
+    </div>
+    <div class="tex">
+      <p>
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Possimus
+        pariatur aspernatur amet saepe consectetur a recusandae eum impedit
+        inventore alias ad, nulla aliquid sapi
+      </p>
+    </div>
+    <div class="date"><p><span style="color:#f57043">01/12/2030</span></p></div>
+  </div>
+  <div class="item">
+    <div class="hover"><h2>Update A.1.0</h2></div>
+    <div class="sub-title">
+      <p>Update A.1.0</p>
+    </div>
+    <div class="tex">
+      <p>
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Possimus
+        pariatur aspernatur amet saepe consectetur a recusandae eum impedit
+        inventore alias ad, nulla aliquid sapi
+      </p>
+    </div>
+    <div class="date"><p><span style="color:#f57043">01/12/2030</span></p></div>
+  </div>
+  <div class="item">
+    <div class="hover"><h2>Update A.1.0</h2></div>
+    <div class="sub-title">
+      <p>Update A.1.0</p>
+    </div>
+    <div class="tex">
+      <p>
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Possimus
+        pariatur aspernatur amet saepe consectetur a recusandae eum impedit
+        inventore alias ad, nulla aliquid sapi
+      </p>
+    </div>
+    <div class="date"><p><span style="color:#f57043">01/12/2030</span></p></div>
+  </div>
+  <div class="item">
+    <div class="hover"><h2>Update A.1.0</h2></div>
+    <div class="sub-title">
+      <p>Update A.1.0</p>
+    </div>
+    <div class="tex">
+      <p>
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Possimus
+        pariatur aspernatur amet saepe consectetur a recusandae eum impedit
+        inventore alias ad, nulla aliquid sapi
+      </p>
+    </div>
+    <div class="date"><p><span style="color:#f57043">01/12/2030</span></p></div>
+  </div>
+  <div class="item">
+    <div class="hover"><h2>Update A.1.0</h2></div>
+    <div class="sub-title">
+      <p>Update A.1.0</p>
+    </div>
+    <div class="tex">
+      <p>
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Possimus
+        pariatur aspernatur amet saepe consectetur a recusandae eum impedit
+        inventore alias ad, nulla aliquid sapi
+      </p>
+    </div>
+    <div class="date"><p><span style="color:#f57043">01/12/2030</span></p></div>
+  </div>
+</section>
+
+<style>
+  section {
+    width: 70%;
+    margin: 0 auto 72px;
+    left: 15%;
+    right: 15%;
+    padding-top: 10%;
+    padding-bottom: 10%;
+  }
+
+  .title {
+    font-weight: bolder;
+    font-size: 3em;
+    line-height: 1.3em;
+    font-family:
+      system-ui,
+      -apple-system;
+    box-sizing: border-box;
+    color: #fff;
+    text-shadow: 0 5px 10px #0004;
+    padding-right: 40%;
+    margin-bottom: 84px;
+  }
+
+  .item {
+    width: 100%;
+    height: auto;
+    margin: 0 auto 20px;
+    padding: 1.5% 3% 1.5%;
+    border: solid 2px #f1683a;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+  }
+
+  .hover {
+    position: absolute;
+    width: 101%;
+    height: 104%;
+    transform: translate(-3%, -17%);
+    background-color: #f1683a;
+    transition: all 0.5s ease;
+
+    h2 {
+      font-size: 2em;
+      letter-spacing: 2px;
+      text-align: center;
+      line-height: 3.5em;
+    }
+  }
+
+  .item:hover {
+    .hover {
+      transform: translate(-101%, -17%);
+    }
+  }
+
+  .transition {
+    background-color: #f1683a;
+    width: 100vw;
+    height: 45.95vh;
+    position: absolute;
+    z-index: 111;
+
+    view-timeline-name: --transition;
+    view-timeline-axis: block;
+    animation-timeline: --transition;
+
+    animation-name: show;
+    animation-range: entry 5% cover 60%;
+    animation-fill-mode: both;
+  }
+
+  @keyframes show {
+    form {
+      height: 0vh;
+    }
+
+    to {
+      transform: translateY(-46vh);
+    }
+  }
+</style>

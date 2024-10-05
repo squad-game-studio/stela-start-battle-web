@@ -30,13 +30,31 @@ import Requirements from "../components/Requirements.astro";
 <style>
   section {
     position: relative;
+    height: 110vh;
+
+    view-timeline-name: --transition;
+    view-timeline-axis: block;
+    animation-timeline: --transition;
+
+    animation-name: transition;
+    animation-range: exit 2%;
+    animation-fill-mode: both;
+  }
+  @keyframes transition {
+    form {
+      opacity: 1;
+    }
+
+    to {
+      opacity: 0;
+    }
   }
 
   .video {
     width: 100%;
     height: 97.8vh;
     object-fit: cover;
-    mask-image: linear-gradient(rgb(0, 0, 0) 80%, transparent);
+    mask-image: linear-gradient(#141414 60%, transparent);
   }
 
   .capa {
@@ -44,16 +62,7 @@ import Requirements from "../components/Requirements.astro";
     width: 100%;
     height: 100%;
     z-index: 100;
-
-    background: rgb(9, 9, 10);
-    background: linear-gradient(
-      0deg,
-      rgba(9, 9, 10, 0.6166841736694677) 0%,
-      rgba(9, 9, 10, 0.6334908963585435) 24%,
-      rgba(9, 9, 10, 0.8239670868347339) 59%,
-      rgba(9, 9, 10, 0.9416141456582633) 82%,
-      rgba(9, 9, 10, 0.9416141456582633) 82%
-    );
+    background: rgba(20, 20, 20, 0.925);
   }
 
   .conten {
