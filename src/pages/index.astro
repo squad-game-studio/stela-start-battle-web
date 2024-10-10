@@ -11,6 +11,49 @@ import Updates from "../components/Updates.astro";
     <Description />
     <Updates />
   </main>
+  <footer>
+    <div class="author">
+      <span style="color: #f1683a;">Author:</span>
+      <address><p>pochedev8@gmail.com</p></address>
+    </div>
+    <div class="company">
+      <span style="color: #f1683a;">Company:</span>
+      <p>©SQUAD GAME STUDIO</p>
+    </div>
+    <div class="contact">
+      <span style="color: #f1683a;">Contact:</span>
+      <p>facebook: <br /> instagram: <br /> X: <br /></p>
+    </div>
+  </footer>
 </Layout>
 
-<style></style>
+<style>
+  footer {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    width: 100%;
+    height: 20vh;
+    background-color: #101010;
+    border-top: solid 3px #f1683a;
+    font-size: 18px;
+  }
+  .author,
+  .company,
+  .contact {
+    /* background-color: #3a3df1; */
+    width: 100%;
+    margin: 20px 40px 10px;
+    p {
+      margin-top: 30px;
+    }
+  }
+
+  .author {
+    border-right: solid 3px #f1683a;
+  }
+
+  .company {
+    border-right: solid 3px #f1683a;
+  }
+</style>
