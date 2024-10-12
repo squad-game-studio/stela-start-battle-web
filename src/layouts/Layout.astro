@@ -82,4 +82,13 @@ const { title } = Astro.props;
     margin: 0;
     text-wrap: pretty;
   }
+
+  main {
+    scroll-snap-type: y mandatory;
+  }
+
+  section {
+    scroll-snap-align: start;
+    scroll-snap-stop: always;
+  }
 </style>
