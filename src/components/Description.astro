@@ -24,13 +24,18 @@ import Requirements from "../components/Requirements.astro";
   <Requirements />
 
   <div class="capa"></div>
-  <video autoplay loop muted src="/video/video01.mp4" class="video"></video>
+  <video
+    autoplay
+    loop
+    muted
+    src="/stela-start-battle-web/video/video01.mp4"
+    class="video"></video>
 </section>
 
 <style>
   section {
     position: relative;
-    height: 110vh;
+    height: 115vh;
 
     view-timeline-name: --transition;
     view-timeline-axis: block;
@@ -54,7 +59,7 @@ import Requirements from "../components/Requirements.astro";
     width: 100%;
     height: 97.8vh;
     object-fit: cover;
-    mask-image: linear-gradient(#141414 60%, transparent);
+    mask-image: linear-gradient(#141414 10%, transparent);
   }
 
   .capa {
