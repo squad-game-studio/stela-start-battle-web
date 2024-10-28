@@ -1,5 +1,10 @@
 ---
-
+import { Image } from "astro:assets";
+import uno from "../assets/01.webp";
+import dos from "../assets/02.webp";
+import tres from "../assets/03.webp";
+import cuatro from "../assets/04.webp";
+import cinco from "../assets/05.webp";
 ---
 
 <section>
@@ -16,7 +21,7 @@
             autem pariatur sit laboriosam vel consectetur.
           </p>
         </div>
-        <img src="src/assets/01.webp" alt="" />
+        <Image src={uno} alt="1° imagen" />
       </div>
       <div id="slider-2" class="conten">
         <div class="tex">
@@ -29,7 +34,7 @@
             autem pariatur sit laboriosam vel consectetur.
           </p>
         </div>
-        <img src="src/assets/02.webp" alt="" />
+        <Image src={dos} alt="2° imagen" />
       </div>
       <div id="slider-3" class="conten">
         <div class="tex">
@@ -42,7 +47,7 @@
             autem pariatur sit laboriosam vel consectetur.
           </p>
         </div>
-        <img src="src/assets/03.webp" alt="" />
+        <Image src={tres} alt="3° imagen" />
       </div>
       <div id="slider-4" class="conten">
         <div class="tex">
@@ -55,7 +60,7 @@
             autem pariatur sit laboriosam vel consectetur.
           </p>
         </div>
-        <img src="src/assets/04.webp" alt="" />
+        <Image src={cuatro} alt="4° imagen" />
       </div>
       <div id="slider-5" class="conten">
         <div class="tex">
@@ -68,15 +73,15 @@
             autem pariatur sit laboriosam vel consectetur.
           </p>
         </div>
-        <img src="src/assets/05.webp" alt="" />
+        <Image src={cinco} alt="5° imagen" />
       </div>
     </div>
     <div class="slider-nav">
-      <a href="#slider-1"><img src="src/assets/01.webp" alt="" /></a>
-      <a href="#slider-2"><img src="src/assets/02.webp" alt="" /></a>
-      <a href="#slider-3"><img src="src/assets/03.webp" alt="" /></a>
-      <a href="#slider-4"><img src="src/assets/04.webp" alt="" /></a>
-      <a href="#slider-5"><img src="src/assets/05.webp" alt="" /></a>
+      <a href="#slider-1"> <Image src={uno} alt="1° imagen" /></a>
+      <a href="#slider-2"> <Image src={dos} alt="2° imagen" /></a>
+      <a href="#slider-3"> <Image src={tres} alt="3° imagen" /></a>
+      <a href="#slider-4"> <Image src={cuatro} alt="4° imagen" /></a>
+      <a href="#slider-5"><Image src={cinco} alt="5° imagen" /></a>
     </div>
   </div>
 </section>
