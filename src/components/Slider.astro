@@ -10,7 +10,7 @@ import cinco from "../assets/05.webp";
 <section>
   <div class="wrapper">
     <div class="slider">
-      <div id="slider-1" class="conten">
+      <div id="slider-1" class="content">
         <div class="tex">
           <h3>sub-titel</h3>
           <h1>title 1</h1>
@@ -21,9 +21,9 @@ import cinco from "../assets/05.webp";
             autem pariatur sit laboriosam vel consectetur.
           </p>
         </div>
-        <Image src={uno} alt="1° imagen" />
+        <Image class="image" src={uno} alt="1° imagen" />
       </div>
-      <div id="slider-2" class="conten">
+      <div id="slider-2" class="content">
         <div class="tex">
           <h3>sub-titel</h3>
           <h1>title 2</h1>
@@ -34,9 +34,9 @@ import cinco from "../assets/05.webp";
             autem pariatur sit laboriosam vel consectetur.
           </p>
         </div>
-        <Image src={dos} alt="2° imagen" />
+        <Image class="image" src={dos} alt="2° imagen" />
       </div>
-      <div id="slider-3" class="conten">
+      <div id="slider-3" class="content">
         <div class="tex">
           <h3>sub-titel</h3>
           <h1>title 3</h1>
@@ -47,9 +47,9 @@ import cinco from "../assets/05.webp";
             autem pariatur sit laboriosam vel consectetur.
           </p>
         </div>
-        <Image src={tres} alt="3° imagen" />
+        <Image class="image" src={tres} alt="3° imagen" />
       </div>
-      <div id="slider-4" class="conten">
+      <div id="slider-4" class="content">
         <div class="tex">
           <h3>sub-titel</h3>
           <h1>title 4</h1>
@@ -60,9 +60,9 @@ import cinco from "../assets/05.webp";
             autem pariatur sit laboriosam vel consectetur.
           </p>
         </div>
-        <Image src={cuatro} alt="4° imagen" />
+        <Image class="image" src={cuatro} alt="4° imagen" />
       </div>
-      <div id="slider-5" class="conten">
+      <div id="slider-5" class="content">
         <div class="tex">
           <h3>sub-titel</h3>
           <h1>title 5</h1>
@@ -73,15 +73,15 @@ import cinco from "../assets/05.webp";
             autem pariatur sit laboriosam vel consectetur.
           </p>
         </div>
-        <Image src={cinco} alt="5° imagen" />
+        <Image class="image" src={cinco} alt="5° imagen" />
       </div>
     </div>
     <div class="slider-nav">
-      <a href="#slider-1"> <Image src={uno} alt="1° imagen" /></a>
-      <a href="#slider-2"> <Image src={dos} alt="2° imagen" /></a>
-      <a href="#slider-3"> <Image src={tres} alt="3° imagen" /></a>
-      <a href="#slider-4"> <Image src={cuatro} alt="4° imagen" /></a>
-      <a href="#slider-5"><Image src={cinco} alt="5° imagen" /></a>
+      <a href="#slider-1"> <Image class="image-nav" src={uno} alt="1° imagen" /></a>
+      <a href="#slider-2"> <Image class="image-nav" src={dos} alt="2° imagen" /></a>
+      <a href="#slider-3"> <Image class="image-nav" src={tres} alt="3° imagen" /></a>
+      <a href="#slider-4"> <Image class="image-nav" src={cuatro} alt="4° imagen" /></a>
+      <a href="#slider-5"><Image class="image-nav" src={cinco} alt="5° imagen" /></a>
     </div>
   </div>
 </section>
@@ -98,6 +98,7 @@ import cinco from "../assets/05.webp";
     animation-range: exit 2%;
     animation-fill-mode: both;
   }
+  
   @keyframes transition {
     for {
       opacity: 1;
@@ -107,11 +108,13 @@ import cinco from "../assets/05.webp";
       opacity: 0;
     }
   }
+
   .wrapper {
     position: relative;
     height: 100vh;
     width: 100vw;
   }
+
   .slider {
     display: flex;
     overflow-x: scroll;
@@ -121,16 +124,12 @@ import cinco from "../assets/05.webp";
     scrollbar-color: #f1683a #141414;
   }
 
-  .conten {
+  .content {
     position: relative;
     scroll-snap-align: center;
     height: 98.1vh;
     flex: 1 0 100%;
     overflow: hidden;
-    img {
-      object-fit: cover;
-      transform: translateY(-9%);
-    }
   }
 
   .tex {
@@ -182,6 +181,7 @@ import cinco from "../assets/05.webp";
       margin: 0 -5px 0;
       scale: 0.8;
       transition: all 150ms ease-in-out;
+      display: flex;
 
       img {
         width: 100%;
@@ -190,10 +190,17 @@ import cinco from "../assets/05.webp";
         border-radius: 1rem;
       }
     }
+
     a:hover {
       scale: 1;
       margin: 0 8px 0;
       border: #f1683a solid 1px;
     }
+  }
+
+  .image {
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
   }
 </style>
