@@ -22,7 +22,7 @@ import cinco from "../assets/m05.webp";
           </p>
         </div>
         <picture>
-          <source srcset="/src/assets/p01.webp" media="(max-width: 460px)" />
+          <source srcset="/src/assets/p01.webp" media="(max-width: 500px)" />
           <source srcset="/src/assets/m01.webp" media="(max-width: 800px)" />
           <img src="/src/assets/g01.webp" alt="img01" />
         </picture>
@@ -165,8 +165,7 @@ import cinco from "../assets/m05.webp";
     overflow: hidden;
 
     img {
-      width: 100%;
-      height: 100%;
+      object-fit: cover;
     }
   }
 
