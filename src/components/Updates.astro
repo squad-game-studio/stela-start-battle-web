@@ -162,4 +162,57 @@
       transform: translateY(-46vh);
     }
   }
+
+  @media (max-width: 500px) {
+    .transition {
+      display: none;
+    }
+
+    .title {
+      font-weight: bolder;
+      font-size: 1.7em;
+      font-family:
+        system-ui,
+        -apple-system;
+      box-sizing: border-box;
+      color: #fff;
+      text-shadow: 0 5px 10px #0004;
+      margin-bottom: 50px;
+    }
+
+    .item {
+      width: 100%;
+      height: auto;
+      margin: 0 auto 20px;
+      padding: 1.5% 3% 1.5%;
+      border: solid 2px #f1683a;
+      position: relative;
+      overflow: hidden;
+      cursor: pointer;
+    }
+
+    .hover {
+      position: absolute;
+      width: 110%;
+      height: 140%;
+      display: grid;
+      padding-inline: -3%;
+      margin-left: -5%;
+      place-content: center;
+      box-sizing: border-box;
+      background-color: #f1683a;
+      transition: all 0.5s ease;
+
+      h2 {
+        font-size: 2em;
+        letter-spacing: 2px;
+        text-align: center;
+        line-height: 3.5em;
+      }
+    }
+
+    section {
+      height: 100%;
+    }
+  }
 </style>
